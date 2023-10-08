@@ -36,3 +36,18 @@ if (appRoot) {
     </BrowserRouter>
   );
 }
+
+
+
+
+
+
+LARAVEL CSRF TOKEN MISMATCH SOLUTION.
+
+go to Verifycsrftoken.php
+
+add 
+
+ protected $except = [
+ 'api/*',
+    ];
