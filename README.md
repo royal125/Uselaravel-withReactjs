@@ -3,8 +3,11 @@ how to use laravel with reacrjs
 
 
 
+
 import React, { Component } from 'react'
+
 import ReactDOM from 'react-dom/client';
+
 import { Router } from 'react-router-dom'
 import About from './Pages/About'
 import Home from './Pages/Home'
