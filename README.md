@@ -4,8 +4,7 @@ how to use laravel with reacrjs
 
 
 import React, { Component } from 'react'
-import { createRoot } from 'react-dom/client';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client';
 import { Router } from 'react-router-dom'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -27,15 +26,13 @@ class App extends Component {
   }
 }
 
-const appRoot = document.getElementById('app');
-
-if (appRoot) {
-  createRoot(appRoot).render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  );
-}
+const container = document.getElementById('app');
+const root = ReactDOM.createRoot(container);
+root.render(
+  <BrowserRouter>
+<App />
+</BrowserRouter>
+);
 
 
 
