@@ -1,13 +1,9 @@
 # Uselaravel-withReactjs
 how to use laravel with reacrjs
 
-
-
-
+<pre>
 import React, { Component } from 'react'
-
 import ReactDOM from 'react-dom/client';
-
 import { Router } from 'react-router-dom'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -16,31 +12,22 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom'
 class App extends Component {
   render () {
     return (
-     
         <div>
           <Home />
          <Routes>
             <Route exact path='/about' element={<About/>} />
-            
             </Routes>
         </div>
-   
     )
   }
 }
-
 const container = document.getElementById('app');
 const root = ReactDOM.createRoot(container);
 root.render(
   <BrowserRouter>
 <App />
-</BrowserRouter>
-);
-
-
-
-
-
+</BrowserRouter> );
+</pre>
 
 LARAVEL CSRF TOKEN MISMATCH SOLUTION.
 
