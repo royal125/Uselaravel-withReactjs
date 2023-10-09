@@ -51,3 +51,18 @@ add
  protected $except = [
  'api/*',
     ];
+
+
+Install reactjs with laravel
+
+composer create-project laravel/laravel laravelreactjs
+cd example-app
+2- Install Breeze starter kit for React (includes Inertia):
+
+composer require laravel/breeze --dev
+php artisan breeze:install react
+3- Run the project (dev mode):
+
+In 1st terminal (Laravel): php artisan serve
+
+And in 2nd one (Vite): npm run dev
